@@ -219,4 +219,13 @@ $(document).ready(function () {
   })
 
 
+  $(document).keydown(function(e) {
+    console.log(e.keyCode)
+    if(e.keyCode == 27) {
+        $('.modal').css({ display: 'none' });
+        $('body').css({ overflow: 'auto' });
+    }
+  })
+
+
 })

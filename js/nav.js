@@ -880,19 +880,7 @@ $(document).ready(function() {
         // 반응형 h_menu_pan에 h_nav_ul 넣기(1024일때 h_nav_pan은 display:none 이니까 그냥 똑같은거 하나 더 만들어서 따로 넣어줘야지.)
     })
 
-    // 모달창 esc 버튼 누를시 닫힘
-    $(document).keydown(function(e) {
-        console.log(e.keyCode)
-        if(e.keyCode == 27) {
-            $('.modal').css({ display: 'none' });
-            $('body').css({ overflow: 'auto' });
-        }
-    })
 
-    // $(document).keydown(function(e) {
-
-    //     console.log(e.keyCode);
-    // })
 
     
 }) // ready()
